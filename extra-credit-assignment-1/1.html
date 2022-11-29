@@ -1,0 +1,162 @@
+<html>
+ <head>
+     <style>
+         #main-table{
+             width: 100%;
+         }
+         #main-table  td, #main-table td input  {
+             min-width: 125px;
+             width: 125px;
+             text-align: center;
+         }
+     </style>
+ </head>
+ <body>
+    <div style="padding: 1em;" >
+        <button onclick="addRow()">Add Row</button>
+        <button onclick="addColumn()">Add Column</button>
+    </div>
+    <table id="main-table" border="1" style="">
+        <tr>
+            <td>fx</td>
+            <td>1 <button onclick="delCol(this)"> DELETE COL</button> </td>
+            <td>2 <button onclick="delCol(this)"> DELETE COL</button> </td>
+            <td>3 <button onclick="delCol(this)"> DELETE COL</button> </td>
+            <td>4 <button onclick="delCol(this)"> DELETE COL</button> </td>
+            <td>5 <button onclick="delCol(this)"> DELETE COL</button> </td>
+            <td>6 <button onclick="delCol(this)"> DELETE COL</button> </td>
+            <td>7 <button onclick="delCol(this)"> DELETE COL</button> </td>
+            <td>8 <button onclick="delCol(this)"> DELETE COL</button> </td>
+            <td>9 <button onclick="delCol(this)"> DELETE COL</button> </td>
+            <td>10 <button onclick="delCol(this)"> DELETE COL</button> </td>
+        </tr>       <td>1 <button onclick="delRow(this)"> DELETE ROW</button>  </td>
+            <td><input type="number"/></td>
+            <td><input type="number"/></td>
+            <td><input type="number"/></td>
+            <td><input type="number"/></td>
+            <td><input type="number"/></td>
+            <td><input type="number"/></td>
+            <td><input type="number"/></td>
+            <td><input type="number"/></td>
+            <td><input type="number"/></td>
+            <td><input type="number"/></td>
+        </tr>
+        <tr>
+            <td>2 <button onclick="delRow(this)"> DELETE ROW</button> </td>
+            <td><input type="number"/></td>
+            <td><input type="number"/></td>
+            <td><input type="number"/></td>
+            <td><input type="number"/></td>
+            <td><input type="number"/></td>
+            <td><input type="number"/></td>
+            <td><input type="number"/></td>
+            <td><input type="number"/></td>
+            <td><input type="number"/></td>
+            <td><input type="number"/></td>
+        </tr>
+        <tr>
+            <td>3 <button onclick="delRow(this)"> DELETE ROW</button> </td>
+            <td><input type="number"/></td>
+            <td><input type="number"/></td>
+            <td><input type="number"/></td>
+            <td><input type="number"/></td>
+            <td><input type="number"/></td>
+            <td><input type="number"/></td>
+            <td><input type="number"/></td>
+            <td><input type="number"/></td>
+            <td><input type="number"/></td>
+            <td><input type="number"/></td>
+        </tr>
+        <tr>
+         <td>4 <button onclick="delRow(this)"> DELETE ROW</button> </td>
+            <td><input type="number"/></td>
+            <td><input type="number"/></td>
+            <td><input type="number"/></td>
+            <td><input type="number"/></td>
+            <td><input type="number"/></td>
+            <td><input type="number"/></td>
+            <td><input type="number"/></td>
+            <td><input type="number"/></td>
+            <td><input type="number"/></td>
+            <td><input type="number"/></td>
+        </tr>
+        <tr>
+            <td>5 <button onclick="delRow(this)"> DELETE ROW</button> </td>
+            <td><input type="number"/></td>
+            <td><input type="number"/></td>
+            <td><input type="number"/></td>
+            <td><input type="number"/></td>
+            <td><input type="number"/></td>
+            <td><input type="number"/></td>
+            <td><input type="number"/></td>
+            <td><input type="number"/></td>
+            <td><input type="number"/></td>
+            <td><input type="number"/></td>
+        </tr>
+        <tr>
+            <td>6 <button onclick="delRow(this)"> DELETE ROW</button> </td>
+            <td><input type="number"/></td>
+            <td><input type="number"/></td>
+            <td><input type="number"/></td>
+            <td><input type="number"/></td>
+            <td><input type="number"/></td>
+            <td><input type="number"/></td>
+            <td><input type="number"/></td>
+            <td><input type="number"/></td>
+            <td><input type="number"/></td>
+            <td><input type="number"/></td>
+        </tr>
+        <tr>
+            <td>7 <button onclick="delRow(this)"> DELETE ROW</button> </td>
+            <td><input type="number"/></td>
+            <td><input type="number"/></td>
+            <td><input type="number"/></td>
+            <td><input type="number"/></td>
+            <td><input type="number"/></td>
+            <td><input type="number"/></td>
+            <td><input type="number"/></td>
+            <td><input type="number"/></td>
+            <td><input type="number"/></td>
+            <td><input type="number"/></td>
+        </tr>
+        <tr>
+            <td>8 <button onclick="delRow(this)"> DELETE ROW</button> </td>
+            <td><input type="number"/></td>
+            <td><input type="number"/></td>
+            <td><input type="number"/></td>
+            <td><input type="number"/></td>
+            <td><input type="number"/></td>
+            <td><input type="number"/></td>
+            <td><input type="number"/></td>
+            <td><input type="number"/></td>
+            <td><input type="number"/></td>
+            <td><input type="number"/></td>
+        </tr>
+        <tr>
+            <td>9 <button onclick="delRow(this)"> DELETE ROW</button> </td>
+            <td><input type="number"/></td>
+            <td><input type="number"/></td>
+            <td><input type="number"/></td>
+            <td><input type="number"/></td>
+            <td><input type="number"/></td>
+            <td><input type="number"/></td>
+            <td><input type="number"/></td>
+            <td><input type="number"/></td>
+            <td><input type="number"/></td>
+            <td><input type="number"/></td>
+        </tr>
+        <tr>
+            <td>10 <button onclick="delRow(this)"> DELETE ROW</button> </td>
+            <td><input type="number"/></td>
+            <td><input type="number"/></td>
+            <td><input type="number"/></td>
+            <td><input type="number"/></td>
+            <td><input type="number"/></td>
+            <td><input type="number"/></td>
+            <td><input type="number"/></td>
+            <td><input type="number"/></td>
+            <td><input type="number"/></td>
+            <td><input type="number"/></td>
+        </tr>
+
+    </table>   

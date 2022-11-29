@@ -1,0 +1,24 @@
+<link href="https://fonts.googleapis.com/css?family=Cagliostro" rel="stylesheet">
+<body>
+  <div class="container">
+    <div class="header">
+      <h1>Drag and Drop!</h1>
+    </div>
+    <div class="options">
+      <label for="file" class="labelbutton">Choose an Image</label>
+      <input type="file" value="Add Image" (change)="addImage($event)" class="filebutton" name="file" id="file">
+      <input type="button" value="Add Text" (click)="addTextArea()" class="textbutton">
+    </div>
+    <div class="main-slide" (drop)="drop($event)" (dragover)="allowDrop($event)">
+      <img id="dragImage" style="position: absolute" src="{{url}}" draggable="true" (drag)="drag($event)"
+           width="{{width}}" height="{{height}}">
+  
+      <input type="text" id="textObject" *ngIf="showTextObject" draggable="true" (drag)="drag($event)">
+  
+  
+    </div>
+  
+  
+  </div>
+  
+  </body>
